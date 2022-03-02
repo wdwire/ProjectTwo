@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;  
+}
+
+body{
+  margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.grid-container {
+  height: 100%;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+  
+}
+
+.card-info{
+  padding: 10px;
+  
+  
+}
+
+
+
+.card-info-flex-container{
+  display: flex;
+  background-color: bisque;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+.card-info-flex-container:hover{
+  background-color: rgb(252, 252, 252);
+ 
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.card-image-container img {
+  transition: transform .2s;
+  width: 100%;
+ 
+  /* height: auto; */
+}
+.card-image-container img:hover {
+ 
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgb(255, 196, 0), 0 6px 20px 0 rgb(255, 196, 0),  0 6px 20px 0 rgb(255, 196, 0);
+ 
+  /* height: auto; */
+}
+
+
+
+
+header{
+    background-color: #b80c0c;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    background-color: #0026ff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+    background-color: #ffae00;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Whitney's add to cart button */
+
+.button-46 {
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #fa966e;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 10px;
+  max-width: 100%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-46:active,
+.button-46:hover {
+  outline: 0;
+}
+
+.button-46:hover {
+  background-color: #fc957e;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+  .button-46 {
+    font-size: 14px;
+    min-width: 50px;
+    padding: 14px 16px;
+  }
+}
+.nav-pretty{
+background-color: rgba(240, 240, 240, 0.26);
+border: 1px solid #DFDFDF;
+display: flex;
+font-family: Inter, sans-serif;
+font-size: 10px;
+justify-content: center;
+color: #000000;
+text-decoration: none;
+transition: all .2s;
+user-select: none;
+}
+
+/* End of Whitney's add to cart button */
